@@ -39,3 +39,4 @@ git push heroku main
 ```
 
 Open up [https://bay-pets.herokuapp.com/](https://bay-pets.herokuapp.com/)
+or [bay-pets.com](bay-pets.com)
