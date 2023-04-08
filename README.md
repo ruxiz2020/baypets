@@ -27,4 +27,13 @@ export FLASK_ENV=development
 .venv/bin/python3 app.py
 ```
 
-4. Navigate to Home page [http://127.0.0.1:5062/](http://127.0.0.1:5062/)
+5. Navigate to Home page [http://127.0.0.1:5062/](http://127.0.0.1:5062/)
+
+
+## deploying it on Heroku
+
+```bash
+heroku create bay-pets
+
+git push heroku master
+```
