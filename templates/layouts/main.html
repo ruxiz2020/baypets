@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="webthemez">
+  <title>Coffee Shop Free HTML Website Template | webthemez</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/css/styles.css" rel="stylesheet">
+  <!-- <link href="static/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="static/css/animate-custom.css" rel="stylesheet">
+  <script src="static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/modernizr.custom.js"></script>
+
+</head>
+
+<body data-target="#navbar-main">
+
+  <div id="navbar-main">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+	         <div class="pull-left logo">
+             <a class="" href="#home">
+               <img src="static/img/logo.png"  style="width:70px;height:50px;" />
+             </a>
+           </div>
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+         </div>
+         <div class="navbar-collapse collapse">
+           <ul class="nav navbar-nav pull-right">
+             <li><a href="#home-section" class="smoothScroll">Welcome</a></li>
+             <li> <a href="#services" class="smoothScroll">Bayarea Vets Reviews</a></li>
+             <li> <a href="#about" class="smoothScroll">AI Vet</a></li>
+           </ul>
+         </div>
+         <!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==== HEADERWRAP ==== -->
+<div id="home-section">
+  <div id="headerwrap" name="home">
+    <header class="clearfix tb">
+      <div class="tb-cell text-center">
+        <i class="fa fa-heart-o icon"></i>
+        <h1>Bay Area Pets Group</h1>
+        <p>Love your pets in a smarter way </p>
+        <a href="#portfolio" class="smoothScroll btn btn-lg">Explore More</a>
+	     </div>
+	  </header>
+</div>
+
+</div>
+
+<!-- ==== SERVICES ==== -->
+<div id="services" name="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 callout" > <i class="fa fa-paw fa-3x" ></i>
+        <h3>Veterinarian Review </h3>
+        </div>
+      <div class="col-lg-4 callout"> <i class="fa fa-paw fa-3x"></i>
+        <h3>Leave a Vet Review</h3>
+        </div>
+      <div class="col-lg-4 callout"> <i class="fa fa-paw fa-3x"></i>
+        <h3>AI Vet</h3>
+        </div>
+    </div>
+    <!-- row -->
+  </div>
+</div>
+
+<div class="div-pattern2"></div>
+<!-- /headerwrap -->
+
+    <!-- Begin page content -->
+    <main id="content" role="main" class="container">
+
+      <div class="row">
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-block alert-info fade in">
+          <a class="close" data-dismiss="alert">&times;</a>
+          {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+
+
+      </div>
+    </main>
+
+
+
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <p>汪汪喵喵 &copy; All Rights Reserved.</p>
+      {% block footer %}{% endblock %}
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
