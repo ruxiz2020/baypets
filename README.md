@@ -35,5 +35,5 @@ export FLASK_ENV=development
 ```bash
 heroku create bay-pets
 
-git push heroku master
+git push heroku main
 ```
